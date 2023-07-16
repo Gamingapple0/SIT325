@@ -11,7 +11,7 @@ class OController(Topo):
 
         # connect n hosts to the switch
         hosts = []
-        for h in range(0, 3):
+        for h in range(0, 2):
             hosts.append(self.addHost("h{}".format(h+1)))
             self.addLink(s1, hosts[h], cls=TCLink, bw=40, delay='15ms')
 
